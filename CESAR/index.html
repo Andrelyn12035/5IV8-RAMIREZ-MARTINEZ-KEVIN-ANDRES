@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <title>Cifrado cesar</title>
+</head>
+<body>
+
+    <div class="contenedor">
+        <p class="titulo"> Este cifrado es un ejemplo original de Cesar en el cual se usa
+     un cambio de posicion dentro del alfabeto en "n" lugares (donde "n" es la clave).</p>
+     <p>Texto:</p>
+     <input type="text" id="cadena">
+     <p>Clave:</p>
+     <input type="text" id="clave">
+     <div id="resultado" class="res"></div>
+        <div class="btn">
+            <p><input type="button" value="Cifrar" class="button"  onclick="validar(true)"></p>
+            <p><input type="button" value="Decifrar" class="button" onclick="validar(false)"></p>
+        </div>
+        <p id="aviso"></p>
+    </div>
+    
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/7.6.0/math.min.js"></script>
+     <script src="js/logica.js" ></script>
+</body>
+</html>
